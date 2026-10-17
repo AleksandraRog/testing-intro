@@ -39,7 +39,7 @@ describe("searchProducts", () => {
     ]);
   });
   test("'\\t\\n' возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
-    const name = "\\t\\n";
+    const name = "\t\n";
     expect(searchProducts(products, name).map((p) => p.id)).toEqual([
       1, 2, 3, 4, 5, 6,
     ]);
